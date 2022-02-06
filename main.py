@@ -64,7 +64,7 @@ def renderData(canvas, data):
 try:
 
     # Update every x minutes
-    interval = REFRESH_MINUES * 60
+    interval = REFRESH_MINUTES * 60
 
     # Initialize our ePaper Display
     epd = epd2in7.EPD()
