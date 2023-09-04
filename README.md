@@ -15,6 +15,9 @@ There are three variables to customize, which are near the top of ``main.py``.
 PIHOLE_IP
    : The IP address of your Pi-hole instances. (Use ``localhost`` if it's running on the same Pi as the PiHole).
 
+API_TOKEN
+   : The API Token of your Pi-hole instance. This can be found in the settings screen of the Pi-hole admin interface. Click on the API tab and then click the Show API Key button.
+
 DISPLAY_TITLE
    : A title to display at the top of your stats. Customize it to your liking!
 

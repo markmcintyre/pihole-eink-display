@@ -15,6 +15,7 @@ import os
 PIHOLE_IP = 'pihole.local'
 DISPLAY_TITLE = 'PiHole Statistics'
 REFRESH_MINUTES = 5
+API_TOKEN = 'api_token_goes_here'
 
 # Get our path
 dirname = os.path.dirname(__file__)
@@ -85,7 +86,7 @@ try:
 
         try:
             # Get our ad blocker data
-            response = urllib.request.urlopen(f'http://{PIHOLE_IP}/admin/api.php')
+            response = urllib.request.urlopen(f'http://{PIHOLE_IP}/admin/api.php?summaryRaw&auth={API_TOKEN}')
             data = json.loads(response.read().decode())
 
             # Render the data
